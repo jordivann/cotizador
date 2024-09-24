@@ -1,0 +1,145 @@
+body {
+    /* background-color: rgba(68, 58, 58, .65); */
+    background-color: rgb(32, 32, 32,.6);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 4.5em; /* Espacio superior para evitar solapamiento con el navbar */
+    width:100%;
+    color:#d5d5d5;
+  }
+  
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+}
+.contenedorPrincipal{
+  display:flex;
+  flex-flow: column wrap;
+  width:100%;
+}
+  
+.logoImg {
+  max-width: 6rem;
+  height: auto;
+  margin-left: 2em;
+  object-fit: cover;
+}
+
+.titulo{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  position:relative;
+  margin-bottom:6em;
+  margin-top:3em;
+  z-index:-1;
+}
+.cotizadorTitle{
+  width:100%;
+  font-size:3.7em;
+  text-align: center;
+  font-weight: bold;
+  color: #f6f3f3;
+  text-shadow: 
+    1px 1px 2px rgba(236, 101, 29, 0.7),   /* Sombra naranja cercana */
+    0 0 5px rgba(236, 101, 29, 0.5),      /* Resplandor suave en naranja */
+    0 0 10px rgba(236, 144, 76, 0.6),      /* Resplandor más amplio y claro */
+    0 0 15px rgba(236, 184, 138, 0.4);  
+}
+.logoPrincipal {
+  position: absolute;
+  max-width: 17rem;
+  height: auto;
+  margin-top: 2em;
+  bottom:-3em;
+  right:0;
+}
+
+.contenedorDesplegables{ 
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contenedorDesplegables .filtros{
+  width:100%;
+}
+@media (max-width:675px){
+  .contenedorDesplegables{
+    flex-flow: column wrap;
+  }
+}
+  select, button, input {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+  }
+  
+  table {
+    width: 100%;
+    border-radius:.7em;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    border-radius:1em;
+    background-color: #f2f2f2;
+  }
+  td{
+    border: 1px solid rgb(236, 101, 29,.5);
+  }
+  
+  button {
+    background-color: #ec6c1c;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f03810;
+  }
+  
+  .btn0km {
+    background-color: #858b83;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .btn0km:hover {
+    background-color: rgb(51, 56, 51);
+  }
+  
+  .centrar {
+    text-align: center;
+  }
+  
+  .btn-precios{
+    background-color: #ec651d;
+    color:#ededed;
+  }
+  .btn-precios:hover{
+    background-color: rgb(35, 16, 6);
+    color:#fff;
+  }
+
+  .form-control:focus{
+    box-shadow: 0 0 12px #ec651d !important;
+  }

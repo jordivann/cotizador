@@ -1,0 +1,25 @@
+{
+  "name": "app-servicor",
+  "version": "1.0.0",
+  "description": "Cotizador",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Jeremias",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.18.2",
+    "fs.promises": "^0.1.2",
+    "morgan": "^1.10.0",
+    "package.json": "^2.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.2"
+  }
+}
